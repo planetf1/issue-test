@@ -2,7 +2,7 @@
 # Copyright Contributors to the Egeria project.
 ---
 name: 🐞 Bug
-about: File a bug/issue
+description: File a bug/issue
 title: "[BUG] <title>"
 labels: [Bug, Needs Triage]
 body:
