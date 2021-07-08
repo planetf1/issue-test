@@ -41,17 +41,17 @@ body:
     attributes:
       label: Environment
       description: |
-      examples:
-        - OS: Ubuntu 20.04
-        - Java: 11.0.3 (adoptopenjdk hotspot)
-        - Browser: Chrome 80.02
+        examples:
+          - OS: Ubuntu 20.04
+          - Java: 11.0.3 (adoptopenjdk hotspot)
+          - Browser: Chrome 80.02
       value: |
         - OS:
         - Java:
         - Browser (for UI issues):
       render: markdown
-     validations:
-     required: false
+    validations:
+    required: false
   - type: textarea
     attributes:
       label: Anything else?
