@@ -41,9 +41,9 @@ body:
     label: Environment
     description: |
     examples:
-      - **OS**: Ubuntu 20.04
-      - **Java**: 11.0.3 (adoptopenjdk hotspot)
-      - **Browser**: Chrome 80.02
+      - OS: Ubuntu 20.04
+      - Java: 11.0.3 (adoptopenjdk hotspot)
+      - Browser: Chrome 80.02
     value: |
       - OS:
       - Java:
