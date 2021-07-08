@@ -35,8 +35,8 @@ body:
         2. With this config...
         3. Run '...'
         4. See error...
-     validations:
-     required: false
+    validations:
+    required: false
   - type: textarea
     attributes:
       label: Environment
