@@ -2,12 +2,19 @@
 <!-- Copyright Contributors to the Egeria project. -->
 ---
 name: Release
-about: Template for Tracking a new release
-title: Release [x.y]
-labels: release
+description: Template for Tracking a new release
+title: "[RELEASE] Release x.y"
+labels: [release]
 assignees: planetf1
 
-Create release x.y :
+body:
+- type: textarea
+  attributes:
+  label: Work Plan
+  description: Work Plan
+  render: markdown
+  value: |
+  Create release x.y :
 
 Prior to the release work
 - [ ] slack post advising of upcoming release & linking to issue
@@ -58,7 +65,4 @@ Final build and publish
 - [ ] Publish that release is now shipped via slack #egeria-announce
 - [ ] Additional posts to social media
 - [ ] Communicate to other repo owners ie for connectors so that they can be rebuilt/shipped as needed
-
-
-Target Date:
 ---
