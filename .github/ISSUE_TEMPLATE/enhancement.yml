@@ -11,9 +11,9 @@ body:
     attributes:
       label: Is there an existing issue for this?
       description: Please search for any related features, and include any related issues in the other text boxes below.
-    options:
-      - label: I have searched the existing issues
-        required: true
+      options:
+        - label: I have searched the existing issues
+          required: true
   - type: textarea
     attributes:
       label: Current Behavior
@@ -45,6 +45,6 @@ body:
     attributes:
       label: Would you be prepared to be assigned this issue to work on?
       description: Let us know if you'd be able to be involved in designing and implementing this enhancement
-    options:
-      - label: I can work on this
-        required: true
+      options:
+        - label: I can work on this
+          required: true
