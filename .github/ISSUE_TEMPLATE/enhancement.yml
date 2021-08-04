@@ -10,7 +10,7 @@ body:
     id: issue_exists
     attributes:
     label: Is there an existing issue for this?
-    description: "Please search for any related features, and include any related issues in the other text boxes below ie by #1234 for an egeria issue, or include the URL"
+    description: Please search for any related features, and include any related issues in the other text boxes below ie by #1234 for an egeria issue, or include the URL
     options:
       - label: I have searched the existing issues
         required: true
