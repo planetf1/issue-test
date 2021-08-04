@@ -4,13 +4,13 @@
 name: 🐞 Bug
 description: File a bug/issue
 title: "[BUG] <title>"
-labels: [Bug, Needs Triage]
+labels: [Bug, triage]
 body:
   - type: checkboxes
     id: issue_exists
     attributes:
       label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      description: "Please search to see if an issue already exists for the bug you encountered. This can save you and the maintainers time. Please include any related issues in the other text boxes below ie by #1234 for an egeria issue, or include the URL"
       options:
         - label: I have searched the existing issues
           required: true
@@ -19,17 +19,17 @@ body:
       label: Current Behavior
       description: A concise description of what you're experiencing.
     validations:
-      required: false
+      required: true
   - type: textarea
     attributes:
       label: Expected Behavior
       description: A concise description of what you expected to happen.
     validations:
-      required: false
+      required: true
   - type: textarea
     attributes:
       label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      description: More detailed specific steps to reproduce the behavior.
       placeholder: |
         1. In this environment...
         2. With this config...
@@ -42,19 +42,23 @@ body:
       label: Environment
       description: |
         examples:
+          - Egeria: 3.0
           - OS: Ubuntu 20.04
           - Java: 11.0.3 (adoptopenjdk hotspot)
           - Browser: Chrome 80.02
+          - Additional Connectors and integration: Egeria Postgres Connector
       value: |
+        - Egeria:
         - OS:
         - Java:
         - Browser (for UI issues):
+        - Additional connectors and integration:
       render: markdown
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Anything else?
+      label: Any Further Information?
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering    !
 
