@@ -17,7 +17,7 @@ body:
   - type: textarea
     attributes:
       label: Current Behavior
-      description: What's the issue or omission with the current capabilities?
+      description: What capability is missing, or not offering what you need?
     validations:
       required: true
   - type: textarea
