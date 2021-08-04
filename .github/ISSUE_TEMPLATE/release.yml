@@ -28,18 +28,20 @@ body:
         - [ ] Update version for branch (ie x.y-SNAPSHOT -> x.y)
 
         Final updates to the release
-        - [ ] Ensure any remaining fixes are merged into branch
+        - [ ] Ensure any remaining fixes are merged into branch (and vice-versa to master)
         - [ ] Remove release notes from branch
-        - [ ] update release notes & rename
-        - [ ] ensure any fixes ported to master
+        - [ ] update release notes in master & rename
 
         Updating the React UI (as this is part of the notebook test). Note egeria-ui is out of scope other than inclusion of current release
-        - [ ] Branch React UI (as with all items under Branching/correcting versions for egeria itself
+        - [ ] Create branch
+        - [ ] Update version in master
+        - [ ] Update version in new branch of connector, and of prereq egeria artifacts
+        - [ ] Ensure new docker image is available for testing
 
-        Updating the Helm Charts & docker-compose
+        Updating the Helm Charts & docker-compose (egeria-charts repo)
         - [ ] checker correct docker images are on dockerhub (these are built by the 'merge' build of a release)
         - [ ] Update image versions for compose (egeria repo)
-        - [ ] update image versions for helm charts (egeria-charts repo)
+        - [ ] update image versions for helm charts (egeria-charts repo) (using -prerelease for chart version)
 
         Final tests
         - [ ] Check swagger doc renders (no regressions)
@@ -61,7 +63,17 @@ body:
         - [ ] Close repo on oss.sonatype.org (once updated) for egeria, release
         - [ ] Close repo on oss.sonatype.org for egeria-react ui
         - [ ] Check 'release' repo on oss.sonatype.org has artifacts
+        - [ ] Update final versions of egeria-charts to release ie x.y
         - [ ] Publish that release is now shipped via slack #egeria-announce
         - [ ] Additional posts to social media
         - [ ] Communicate to other repo owners ie for connectors so that they can be rebuilt/shipped as needed
+
+        Additional components
+        - ReactUI
+          - [ ] Create final github release
+        - PostGres Connector
+          - [ ] Create branch
+          - [ ] Update version in master
+          - [ ] Update version in new branch of connector, and of prereq egeria artifacts
+          - [ ] Create github release
 ---
