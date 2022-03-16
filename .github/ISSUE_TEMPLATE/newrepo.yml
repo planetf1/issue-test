@@ -11,18 +11,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please try and fill in useful information in the form to explain why
-        a new repository is needed, and to help get the task moving.
-        Come back and update the text in these sections as the discussion progresses,
-        or add notes below
+        Please try and fill in useful information in the form to explain why a new repository is needed, and to help get the task moving.
+        Come back and update the text in these sections as the discussion progresses, or add notes below
   - type: input
     id: reponame
     attributes:
-      label: repo-name
+      label: repo name
       description: |
         What should the repo be called?
         Look at the existing names and try and follow an appropriate pattern, ie egeria-connector-xxx
-      placeholder: my-repo-name
+      placeholder: egeria-connector-xxx
     validations:
       required: true
   - type: input
@@ -46,9 +44,7 @@ body:
         Will also publish maven artifacts to maven central, and a container image including base egeria plus this connector
         to quay.io & docker.io
       description: |
-        What is the deliverable of this repo, and how will someone use it?
-        Are there maven artifacts? Containers? Or something else?
-        where will they get them from if not building from source?
+        What is the deliverable of this repo, and how will someone use it, for what purpose?
     validations:
       required: true
   - type: textarea
