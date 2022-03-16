@@ -91,7 +91,7 @@ body:
       id: assumptions
       attributes:
         label: justification
-        description:|
+        description: |
         Are all of the following assumptions true? If not please explain why
         - DCO is required
         - Apache 2.0 / CC-BY-4.0 licensed
@@ -108,8 +108,7 @@ body:
       id: extra
       attributes:
         label: extra
-        description:|
+        description: |
         Any other information?
         validations:
           required: false
-          
