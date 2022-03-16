@@ -122,14 +122,13 @@ body:
   - type: textarea
     attributes:
         label: Work Plan
-        description: Work Plan
+        description: | 
+          This is a checklist to guide the work needed to complete getting the repository and code into an appropriate state for ongoing development. 
+          
+          This section should be filled in by the evaluator of the request and is an outline of the work required.
+      
+          Where these items may not be undertaken soon after creation, an issue should be opened to track.
         value: |
-          
-            This section should be filled in by the evaluator of the request and is an outline
-            of the work required. 
-          
-            Where these items may not be undertaken soon after creation, an issue should be opened to track
-
             Before creating the repo
             - [ ] review overall request & get clarifications
             - [ ] get approval on developer/TSC call from maintainers
