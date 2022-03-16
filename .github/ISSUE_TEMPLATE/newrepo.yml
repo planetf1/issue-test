@@ -4,14 +4,13 @@ SPDX-License-Identifier: CC-BY-4.0
 name: Repository
 description: Request a new Repository
 title: "[REPOSITORY] New Component"
-labels: [ repo ]
+labels: [repo]
 assignees: planetf1
 
 body:
   - type: markdown
       - attributes:
           value: |
-            
             Please try and fill in useful information in the form to explain why
             a new repository is needed, and to help get the task moving.
             
@@ -113,3 +112,4 @@ body:
         Any other information?
         validations:
           required: false
+          
