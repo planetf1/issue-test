@@ -12,11 +12,12 @@ body:
     attributes:
       value: |
         Please try and fill in useful information in the form to explain why a new repository is needed, and to help get the task moving.
-        Come back and update the text in these sections as the discussion progresses, or add notes below
+        Come back and update the text in these sections as the discussion progresses, or add notes below.
+        If you have any ideas on how to improve this form, please open up an issue!
   - type: input
     id: reponame
     attributes:
-      label: repo name
+      label: Name
       description: |
         What should the repo be called?
         Look at the existing names and try and follow an appropriate pattern, ie egeria-connector-xxx
@@ -26,35 +27,35 @@ body:
   - type: input
     id: repoowner
     attributes:
-      label: repo-owner
+      label: Owner
       placeholder: my-github-id
       description: |
         github id(s) of main owner(s)
         This user should be responsible to manage the repo content, handle maintainance tasks like
-        dependency updates, security scans, release process.
+        dependency updates, security scans, release process. They will be expected to participate in discussions and meetings around release, security as determined by the TSC.
     validations:
       required: true
   - type: textarea
     id: deliverable
     attributes:
-      label: deliverable
+      label: Deliverable
       placeholder: |
-        Provides an integration connector for magic database X
-        Users can use the jar from a build
-        Will also publish maven artifacts to maven central, and a container image including base egeria plus this connector
-        to quay.io & docker.io
+        Provides an integration connector for magic database X so that metadata on tables and columns can be made available to other cohort members.
       description: |
-        What is the deliverable of this repo, and how will someone use it, for what purpose?
+        What are the deliverables, or outputs, of this repo, and how will someone use them, for what purpose?
     validations:
       required: true
   - type: textarea
     id: build
     attributes:
-      label: build
+      label: Build & CI/CD process
       description: |
-        Build & CI/CD process
-        How will the new artifacts be built - maven, gradle? scripts?
+        How will the deliverables identified above be created & distributed?
+        Will maven, gradle (preferred for new repos) be used?
         What languages are used - Python, Java, Go, .... are particular versions needed?
+        will a container image be required? 
+        What should be checked before a PR can be merged?
+        Should javadoc be published?
       placeholder: |
         Provide a very high level overview -- exact details aren't essential at this stage
     validations:
@@ -71,7 +72,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: justification
+    id: Justification
     attributes:
       label: justification
       description: |
@@ -83,24 +84,31 @@ body:
   - type: textarea
     id: assumptions
     attributes:
-      label: assumptions
+      label: Assumptions
       description: |
         Are all of the following assumptions true? If not please explain why
           - DCO is required
           - Apache 2.0 / CC-BY-4.0 licensed
           - Issue tracking enabled
-          - Security scanning will be enabled if possible
+          - Security scanning will be enabled
           - code scanning will be enabled
           - User docs are in egeria-docs, some technical detailed docs/designs in this repo
           - initial CODEOWNERS will list repository owner primarily
           - Dependabot dependency updates will be set up
           - nominated owner will be responsible for managing the repo content
+          - repo is public with same group/permissions as the main Egeria repo
+          - If using maven/gradle, snapshots will be published to oss.sonatype.org & releases to maven central
+          - If using containers, they will be published to quay.io & docker.io & built for arm64 + amd64 with same release versions as other artifacts
+          - If using maven, versioning should follor 1.1 / 1.1-SNAPSHOT convention. For javascript etc use semver, ie 1.1.1 / 1.1.1-rc.0
+
+    placeholder: |
+      Yes - all true
     validations:
       required: true
   - type: textarea
     id: extra
     attributes:
-      label: extra
+      label: Additional Information
       description: |
         Any other information?
         placeholder: |
