@@ -98,8 +98,7 @@ body:
           - nominated owner will be responsible for managing the repo content
           - repo is public with same group/permissions as the main Egeria repo
           - If using maven/gradle, snapshots will be published to oss.sonatype.org & releases to maven central
-          - If using containers, they will be published to quay.io & docker.io & built for arm64 + amd64 with same release versions as other artifacts
-        
+          - If using containers, they will be published to quay.io & docker.iop
 
     placeholder: |
       Yes - all true
