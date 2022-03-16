@@ -97,9 +97,7 @@ body:
           - Dependabot dependency updates will be set up
           - nominated owner will be responsible for managing the repo content
           - repo is public with same group/permissions as the main Egeria repo
-          - If using maven/gradle, snapshots will be published to oss.sonatype.org & releases to maven central
-        
-
+          - 
     placeholder: |
       Yes - all true
     validations:
