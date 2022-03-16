@@ -100,7 +100,6 @@ body:
           - If using maven/gradle, snapshots will be published to oss.sonatype.org & releases to maven central
           - If using containers, they will be published to quay.io & docker.io & built for arm64 + amd64 with same release versions as other artifacts
           - If using maven, versioning should follor 1.1 / 1.1-SNAPSHOT convention. For javascript etc use semver, ie 1.1.1 / 1.1.1-rc.0
-
     placeholder: |
       Yes - all true
     validations:
