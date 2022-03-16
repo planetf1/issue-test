@@ -123,10 +123,10 @@ body:
     attributes:
         label: Work Plan
         description: | 
-          This is a checklist to guide the work needed to complete getting the repository and code into an appropriate state for ongoing development. 
+          DO NOT FILL THIS IN NOW
           
-          This section should be filled in by the evaluator of the request and is an outline of the work required.
-      
+          This is a checklist to guide the work needed to complete getting the repository and code into an appropriate state for ongoing development. 
+                
           Where these items may not be undertaken soon after creation, an issue should be opened to track.
         value: |
             Before creating the repo
