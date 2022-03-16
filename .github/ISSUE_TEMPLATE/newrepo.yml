@@ -59,6 +59,8 @@ body:
         Build & CI/CD process
         How will the new artifacts be built - maven, gradle? scripts?
         What languages are used - Python, Java, Go, .... are particular versions needed?
+      placeholder: |
+        Provide a very high level overview -- exact details aren't essential at this stage
     validations:
       required: true
   - type: textarea
@@ -73,39 +75,39 @@ body:
     validations:
       required: true
   - type: textarea
-      id: justification
-      attributes:
-        label: justification
-        description: |
-          Why do we need another repo? Were alternatives looked at using existing repos?
-        placeholder: |
-          Add justification here
-      validations:
-        required: true
+    id: justification
+    attributes:
+      label: justification
+      description: |
+        Why do we need another repo? Were alternatives looked at using existing repos?
+      placeholder: |
+        Add justification here
+    validations:
+      required: true
   - type: textarea
-      id: assumptions
-      attributes:
-        label: assumptions
-        description: |
-          Are all of the following assumptions true? If not please explain why
-            - DCO is required
-            - Apache 2.0 / CC-BY-4.0 licensed
-            - Issue tracking enabled
-            - Security scanning will be enabled if possible
-            - code scanning will be enabled
-            - User docs are in egeria-docs, some technical detailed docs/designs in this repo
-            - initial CODEOWNERS will list repository owner primarily
-            - Dependabot dependency updates will be set up
-            - nominated owner will be responsible for managing the repo content
-      validations:
-        required: true
+    id: assumptions
+    attributes:
+      label: assumptions
+      description: |
+        Are all of the following assumptions true? If not please explain why
+          - DCO is required
+          - Apache 2.0 / CC-BY-4.0 licensed
+          - Issue tracking enabled
+          - Security scanning will be enabled if possible
+          - code scanning will be enabled
+          - User docs are in egeria-docs, some technical detailed docs/designs in this repo
+          - initial CODEOWNERS will list repository owner primarily
+          - Dependabot dependency updates will be set up
+          - nominated owner will be responsible for managing the repo content
+    validations:
+      required: true
   - type: textarea
-      id: extra
-      attributes:
-        label: extra
-        description: |
-          Any other information?
+    id: extra
+    attributes:
+      label: extra
+      description: |
+        Any other information?
         placeholder: |
-          add any other information here
-      validations:
-        required: false
+        add any other information here
+    validations:
+      required: false
