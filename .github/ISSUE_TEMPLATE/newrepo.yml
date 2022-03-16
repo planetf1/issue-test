@@ -23,19 +23,19 @@ body:
         What should the repo be called?
         Look at the existing names and try and follow an appropriate pattern, ie egeria-connector-xxx
       placeholder: my-repo-name
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     id: repoowner
     attributes:
-      label: Repo Owner
+      label: repo-owner
       placeholder: my-github-id
       description: |
         github id(s) of main owner(s)
         This user should be responsible to manage the repo content, handle maintainance tasks like
         dependency updates, security scans, release process.
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: deliverable
     attributes:
@@ -49,8 +49,8 @@ body:
         What is the deliverable of this repo, and how will someone use it?
         Are there maven artifacts? Containers? Or something else?
         where will they get them from if not building from source?
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: build
     attributes:
@@ -59,8 +59,8 @@ body:
         Build & CI/CD process
         How will the new artifacts be built - maven, gradle? scripts?
         What languages are used - Python, Java, Go, .... are particular versions needed?
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: dependencies
     attributes:
@@ -70,8 +70,8 @@ body:
       placeholder: |
         No dependencies directly on other repos
         All egeria dependencies are via maven/gradle.
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
       id: justification
       attributes:
@@ -80,8 +80,8 @@ body:
           Why do we need another repo? Were alternatives looked at using existing repos?
         placeholder: |
           Add justification here
-        validations:
-          required: true
+      validations:
+        required: true
   - type: textarea
       id: assumptions
       attributes:
@@ -97,8 +97,8 @@ body:
             - initial CODEOWNERS will list repository owner primarily
             - Dependabot dependency updates will be set up
             - nominated owner will be responsible for managing the repo content
-        validations:
-          required: true
+      validations:
+        required: true
   - type: textarea
       id: extra
       attributes:
@@ -107,5 +107,5 @@ body:
           Any other information?
         placeholder: |
           add any other information here
-        validations:
-          required: false
+      validations:
+        required: false
