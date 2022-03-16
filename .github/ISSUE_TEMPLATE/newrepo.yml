@@ -48,7 +48,7 @@ body:
   - type: textarea
     id: build
     attributes:
-      label: Build & CI/CD process
+      label: Build and CI/CD process
       description: |
         How will the deliverables identified above be created & distributed?
         Will maven, gradle (preferred for new repos) be used?
