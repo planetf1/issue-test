@@ -3,19 +3,18 @@
 ---
 name: Repository
 description: Request a new Repository
-title: "[REPOSITORY] New Component"
-labels: [repo]
+title: "[REPOSITORY] New Repository"
+labels: [ repo ]
 assignees: planetf1
-
 body:
   - type: markdown
-      - attributes:
-          value: |
-            Please try and fill in useful information in the form to explain why
-            a new repository is needed, and to help get the task moving.
-            
-            Come back and update the text in these sections as the discussion progresses,
-            or add notes below
+    attributes:
+      value: |
+        Please try and fill in useful information in the form to explain why
+        a new repository is needed, and to help get the task moving.
+        
+        Come back and update the text in these sections as the discussion progresses,
+        or add notes below
   - type: input
     id: reponame
     attributes:
@@ -52,7 +51,6 @@ body:
            where will they get them from if not building from source?
       validations:
         required: true
-
   - type: textarea
     id: build
     attributes:
@@ -63,7 +61,6 @@ body:
         What languages are used - Python, Java, Go, .... are particular versions needed?
       validations:
         required: true
-
   - type: textarea
     id: dependencies
     attributes:
@@ -75,7 +72,6 @@ body:
         All egeria dependencies are via maven/gradle.
       validations:
         required: true
-
   - type: textarea
       id: justification
       attributes:
@@ -86,7 +82,6 @@ body:
 
         validations:
           required: true
-
   - type: textarea
       id: assumptions
       attributes:
