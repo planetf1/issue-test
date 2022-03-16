@@ -13,7 +13,6 @@ body:
       value: |
         Please try and fill in useful information in the form to explain why
         a new repository is needed, and to help get the task moving.
-        
         Come back and update the text in these sections as the discussion progresses,
         or add notes below
   - type: input
